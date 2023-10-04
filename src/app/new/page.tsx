@@ -19,9 +19,12 @@ const New = () => {
   };
 
   return (
-    <div className='flex flex-col items-center'>
-      <form action={handleSubmit} className='flex flex-col gap-4 mt-12'>
-        <input type='text' name='task' className='text-black' />
+    <div className='flex flex-col  items-center'>
+      <form
+        action={handleSubmit}
+        className='flex flex-col border-4 border-white p-6 gap-4 mt-12'
+      >
+        <input type='text' name='task' className='text-black p-2' />
         <Link href='/' className='border-2 border-white text-center'>
           Cancel
         </Link>
